@@ -20,7 +20,7 @@ WIFI_COUNTRY_CODE="FR"
 # Set value to Y or N
 HOTSPOT_HTTPS="N"
 # Network where the hotspot is located
-HOTSPOT_NETWORK="192.168.1.0"
+HOTSPOT_NETWORK="192.168.10.0"
 # Secret word for FreeRadius
 FREERADIUS_SECRETKEY=`cat /dev/urandom | tr -dc 'a-zA-Z0-9' | fold -w 32 | head -n 1`
 # WAN interface (the one with Internet - default 'eth0' or long name for Debian 9+)
