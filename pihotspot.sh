@@ -10,9 +10,9 @@ LOGPATH="/var/log/"
 # Password for user root (MySql/MariaDB not system)
 MYSQL_PASSWORD="pihotspot"
 # Name of the hotspot that will be visible for users/customers
-HOTSPOT_NAME="kupikihotspot"
+HOTSPOT_NAME="RDhotspot"
 # IP of the hotspot
-HOTSPOT_IP="192.168.10.1"
+HOTSPOT_IP="192.168.1.30"
 # Wi-fi code country. Use above link to find yours
 # https://www.cisco.com/c/en/us/td/docs/wireless/wcs/3-2/configuration/guide/wcscfg32/wcscod.html
 WIFI_COUNTRY_CODE="FR"
@@ -20,7 +20,7 @@ WIFI_COUNTRY_CODE="FR"
 # Set value to Y or N
 HOTSPOT_HTTPS="N"
 # Network where the hotspot is located
-HOTSPOT_NETWORK="192.168.10.0"
+HOTSPOT_NETWORK="192.168.1.0"
 # Secret word for FreeRadius
 FREERADIUS_SECRETKEY=`cat /dev/urandom | tr -dc 'a-zA-Z0-9' | fold -w 32 | head -n 1`
 # WAN interface (the one with Internet - default 'eth0' or long name for Debian 9+)
